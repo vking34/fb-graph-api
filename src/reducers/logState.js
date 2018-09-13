@@ -1,10 +1,10 @@
-var logState = (state = 'Not logged', action) => {
+var logState = (state = false, action) => {
   switch (action.type) {
       case 'LOGIN':
-          return 'Logged';
+          return true;
       default:
-          return state;
+          return false;
   }
 };
 
-module.exports = logState;
+export default logState;

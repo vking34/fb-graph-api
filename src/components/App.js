@@ -29,7 +29,7 @@ class App extends Component {
               <TopBar/>
           </div>
         </nav>
-          <h2>{this.props.log_state}</h2>
+          <h2>{this.props.log_state ? `1` : `0`}</h2>
       </div>
     );
   }
